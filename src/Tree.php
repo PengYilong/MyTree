@@ -1,19 +1,54 @@
 <?php
-namespace tree;
+namespace Nezumi;
 
-class Tree{
+class MyTree{
 
-	public $data = array();   
-	public $field = array();  // in order to different key which is not always id,pid,catename
+	/**
+	 * @var array
+	 */
+	public $data = []; 
 
-	public $result = array(); //
-	public $item = array();   //
-	public $tree = '';   	  //
-	public $options = '';     //select result
-	public $path = array();   //path
-	public $path_str = '';    //path string
+	/**
+	 * @var array in order to different key which is not always id,pid,catename
+	 */  
+	public $field = [];  
+	/**
+	 * @var array
+	 */
+	public $result = []; 
 
-	public $icon = array('│','├','└');
+	/**
+	 * @var array 
+	 */
+	public $item = [];   
+
+	/**
+	 * @var string 
+	 */
+	public $tree = '';   	  
+
+	/**
+	 * @var string select result
+	 */
+	public $options = '';     
+
+	/**
+	 * @var array path
+	 */
+	public $path = [];   
+	/**
+	 * @var string path
+	 */
+	public $path_str = '';   
+
+	/**
+	 * @var [] 
+	 */
+	public $icon = array['│','├','└'];
+
+	/**
+	 * @var
+	 */
 	public $nbsp = "&nbsp;";
 
 	public function __construct($data, $field = array('id'=>'id','pid'=>'parentid','name'=>'catename'))

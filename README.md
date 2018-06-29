@@ -1,22 +1,21 @@
-The tree class
-Generate tree structure which could be any. 
+a tree class
+==============
 
- [![Latest Stable Version](https://poser.pugx.org/yilongpeng/tree/v/stable)](https://packagist.org/packages/yilongpeng/tree)
-
+Generates tree structure which could be any. 
 
 ## Installation
 
-Use [composer](http://getcomposer.org) to install yilong/mysql in your project:
+Use [composer](http://getcomposer.org) to install yilong/mytree in your project:
 ```
-composer require yilongpeng/tree
+composer require yilongpeng/mytree
 ```
 
 
 ## Usage
 ```php
-use tree\Tree;
+use Nezumi\MyTree;
 
-$class = new Tree();
+$class = new MyTree();
 $class->init($data, array('id'=>'id','pid'=>'parentid'));
 $result = $class->get_tree(0, 0, "<option value=\$id \$selected>\$spacer\$name</option>");
 // $result = '<select>'.$result.'</select>';

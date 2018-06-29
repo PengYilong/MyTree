@@ -1,20 +1,20 @@
 {
-    "name": "yilongpeng/tree",
-    "description": "the tree class",
+    "name": "nezumi/mytree",
+    "description": "a tree class which generates tree structure",
     "require": {
-		"php": "*"
+		"php": ">=5.4"
     },
     "authors": [
         {
             "name": "Yilong Peng",
-            "homepage": "https://github.com/YilongPeng",
+            "homepage": "https://github.com/PengYilong",
             "email": "948800401@qq.com",
             "role": "Developer"
         }
     ],
     "autoload": {
         "psr-4": {
-            "tree\\": "src/"
+            "Nezumi\\": "src/"
         }
     }
 }
